@@ -1,5 +1,5 @@
 {
-    "name": "mlocati/concrete5-translation-library",
+    "name": "jaromirdalecky/concrete5-translation-library",
     "description": "Library to handle concrete5 core and package translations",
     "type": "library",
     "keywords": [
