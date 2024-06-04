@@ -3,9 +3,9 @@
 namespace C5TL\Parser\DynamicItem;
 
 /**
- * Extract translatable data from Trees.
+ * Extract translatable data from ExpressFormFieldSets.
  */
-class Tree extends DynamicItem
+class ExpressFormFieldSet extends DynamicItem
 {
     /**
      * {@inheritdoc}
@@ -14,7 +14,7 @@ class Tree extends DynamicItem
      */
     public function getParsedItemNames()
     {
-        return function_exists('t') ? t('Trees and Topics') : 'Trees and Topics';
+        return function_exists('t') ? t('Express Form Field Sets') : 'Express Form Field Sets';
     }
 
     /**
@@ -24,6 +24,6 @@ class Tree extends DynamicItem
      */
     protected function getClassNameForExtractor()
     {
-        return '\Concrete\Core\Tree\Tree';
+        return '\Concrete\Core\Entity\Express\FieldSet';
     }
 }
